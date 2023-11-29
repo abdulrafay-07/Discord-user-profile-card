@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.discord-profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #282b30;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+}
+
+.discord-profile::before {
+    content: '';
+    position: absolute;
+    height: 16.5%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #101011;
+}
+
+.image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 6px solid #282b30;
+}
+
+.dnd {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #F04747;
+    border-radius: 50%;
+    border: 6px solid #191b1d;
+    bottom: 5px;
+    right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-dnd {
+    background-color: #191b1d;
+    width: 14px;
+    height: 6px;
+    border-radius: 24px;
+}
+
+.data {
+    background-color: #191b1d;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.discord-profile .username {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14px;
+}
+
+.username .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.username .small-name {
+    font-size: 12px;
+}
+
+.discord-profile .info {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0;
+}
+
+.info .text {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.info .date {
+    font-size: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.discord-profile .note {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 8px;
+}
+
+.note #notes {
+    font-size: 10px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+textarea {
+    resize: none;
+    color: white;
+    background-color: #191b1d;
+    border-color: #191b1d;
+    font-size: 11px;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: 60%;
+}
+
+hr {
+    height: 0.1px;
+    border: none;
+    background-color: #282b30;
+}
+
+.steam, .twitter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steam .steam-1, .steam .steam-2 {
+    border: 1px solid #282b30;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 245px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.steam-1, .steam-2, .twitter-1 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.margin-hr {
+    margin-bottom: 18px;
+}
+
+i, svg {
+    vertical-align: middle;
+    fill: white;
+}
+
+.bxl-steam {
+    font-size: 25px;
+}
+
+.bx-check {
+    font-size: 18px;
+}
+
+.twitter .twitter-1 {
+    border: 1px solid #282b30;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 245px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.right-nav {
+    float: right;
+    color: white;
+}
+
+.arrow-size {
+    transform: scale(0.7);
+    opacity: 80%;
+}
+
+.bxl-steam, .twitter-icon {
+    padding-right: 5px;
+}
+
+span {
+    color: white;
+}
